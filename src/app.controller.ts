@@ -9,6 +9,11 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('api-status')
+  apiStatus(): string {
+    return 'hello';
+  }
 }
 
 // controllers are to check if everything we pass in the payload are correct or not
